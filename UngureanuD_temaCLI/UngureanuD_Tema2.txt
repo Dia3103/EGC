@@ -1,0 +1,27 @@
+1. Ce este un viewport?
+   - Un viewport este o regiune rectangulară pe ecran în care se desenează grafica generată în OpenGL. Acesta determină zona de afișare a scenei tridimensionale în fereastra aplicației.
+
+2. Ce reprezintă conceptul de frames per second din punctul de vedere al bibliotecii OpenGL?
+   - Frames per second reprezintă numărul de cadre sau imagini pe secundă pe care OpenGL le afișează în fereastra aplicației. Controlul FPS este important pentru măsurarea performanței unei aplicații OpenGL și asigurarea unei experiențe fluide pentru utilizator.
+
+3. Când este rulată metoda OnUpdateFrame()?
+   - Metoda `OnUpdateFrame()` este tipic rulată în bucla principală a aplicației OpenGL, pentru a actualiza starea jocului sau a scenei. Această metodă este responsabilă pentru actualizarea poziției obiectelor, detecția coliziunilor și alte aspecte legate de logica jocului. De obicei, este apelată în fiecare cadru.
+
+4. Ce este modul imediat de randare?
+   - Modul imediat de randare este o tehnică veche de desenare în OpenGL, care implică trimiterea directă a vertexilor și altor date grafice către GPU pentru fiecare cadru. Acest mod de randare a fost învechit și nu mai este recomandat pentru performanță. În schimb, se recomandă utilizarea modului VBO/VAO (Vertex Buffer Object/Vertex Array Object) în versiunile moderne de OpenGL.
+
+5. Care este ultima versiune de OpenGL care acceptă modul imediat?
+   - OpenGL 3.0 a introdus conceptul de deprecare pentru modul imediat de randare, ceea ce înseamnă că acest mod a început să fie învechit. Majoritatea funcțiilor legate de modul imediat au fost eliminate în OpenGL 3.1 și versiuni ulterioare. Prin urmare, versiunile OpenGL 3.0 și anterioare suportau modul imediat.
+
+6. Când este rulată metoda OnRenderFrame()?
+   - Metoda `OnRenderFrame()` este tipic rulată în bucla principală a aplicației OpenGL după ce s-a actualizat starea jocului sau a scenei folosind `OnUpdateFrame()`. Această metodă este responsabilă pentru desenarea scenei și a obiectelor în fereastra de afișare.
+
+7. De ce este nevoie ca metoda OnResize() să fie executată cel puțin o dată?
+   - Metoda `OnResize()` este responsabilă pentru gestionarea evenimentelor de redimensionare a ferestrei aplicației. Aceasta trebuie să fie apelată cel puțin o dată pentru a inițializa corect viewport-ul și matricea de proiecție pentru a se potrivi noii dimensiuni ale ferestrei după redimensionare.
+
+8. Ce reprezintă parametrii metodei CreatePerspectiveFieldOfView() și care este domeniul de valori pentru aceștia?
+   - Metoda CreatePerspectiveFieldOfView() este adesea folosită pentru a crea o matrice de proiecție perspectivică în OpenGL. Parametrii săi sunt:
+	fieldOfView: Este un unghi care reprezintă câmpul de vedere în grade.
+	aspectRatio: Este raportul de aspect, adică lățimea ferestrei împărțită la înălțimea ferestrei.
+	nearPlane: Este distanța față de observator până la planul de aproape.
+	farPlane: Este distanța față de observator până la planul de departe.
