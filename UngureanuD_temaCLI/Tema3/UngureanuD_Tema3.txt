@@ -1,0 +1,32 @@
+1.Care este ordinea de desenare a vertexurilor pentru aceste metode (orar sau anti-orar)? Desenați axele de coordonate din aplicația-template folosind un singur apel GL.Begin().
+Răspuns
+	Ordinea in care trebuie desenate vertexurile pentru aceste metode este in sens orar.
+
+2. Ce este anti-aliasing? Prezentați această tehnică pe scurt.
+Răspuns
+	Anti-aliasing este o tehnică utilizată în grafică computerizată pentru a reduce efectele de pixelare sau asprimea contururilor obiectelor desenate.
+
+3. Care este efectul rulării comenzii GL.LineWidth(float)? Dar pentru GL.PointSize(float)? Funcționează în interiorul unei zone GL.Begin()?
+Răspuns
+	Comenzile GL.LineWidth(float) și GL.PointSize(float) sunt utilizate pentru a specifica lățimea liniilor și dimensiunea punctelor desenate în OpenGL. Ele au următoarele efecte:
+	Primacomandă setează lățimea liniilor care urmează să fie desenate cu GL.Lines, GL.LineStrip sau alte primitive de linii.
+	A doua comandă setează dimensiunea punctelor care urmează să fie desenate cu GL.Points.
+	Da, funcționează în interiorul unei zone GL.Begin().
+
+4. Răspundeți la următoarele întrebări (utilizați ca referință eventual și
+tutorii OpenGL Nate Robbins):
+	• Care este efectul utilizării directivei LineLoop atunci când desenate segmente de dreaptă multiple în OpenGL?
+	Rezultatul este un poligon închis, de obicei, cu contur.
+
+	• Care este efectul utilizării directivei LineStrip atunci când desenate segmente de dreaptă multiple în OpenGL?
+	Rezultatul este o serie de segmente consecutive, fără a forma o figură închisă.
+
+	• Care este efectul utilizării directivei TriangleFan atunci când desenate segmente de dreaptă multiple în OpenGL?
+	Rezultatul este un tip de desen care poate fi folosit pentru a crea forme radiale sau rotații în jurul unui punct central.
+
+	• Care este efectul utilizării directivei TriangleStrip atunci când desenate segmente de dreaptă multiple în OpenGL?
+	Rezultatul este o bandă continuă de triunghiuri conectate între ele, care poate fi folosită pentru a crea forme complexe, cum ar fi fâșii sau benzi.
+
+7. Ce reprezintă un gradient de culoare? Cum se obține acesta în OpenGL?
+Răspuns
+	Un gradient de culoare reprezintă o tranziție lină între două sau mai multe culori. Acesta poate fi utilizat pentru a crea efecte vizuale plăcute, cum ar fi trecerea de la o culoare la alta într-un fundal, crearea efectelor de iluminare sau pentru a oferi profunzime și strălucire obiectelor în grafică computerizată.
