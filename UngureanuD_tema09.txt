@@ -1,0 +1,20 @@
+1. Descrieți diferențele dintre iluminarea așa cum funcționează în lumea
+reală și modelul de iluminare utilizat de OpenGL.
+
+Răspuns: Iluminarea reală implică fenomene complexe (reflexii globale, dispersie), pe când OpenGL folosește un model simplificat, bazat pe reflexii difuze și speculare locale. OpenGL nu simulează interacțiunea globală a luminii între obiecte.
+
+2. Câte surse de lumină sunt suportate în implementarea curentă a
+OpenGL cu ajutorul framework-ului OpenTK?
+
+Răspuns: OpenGL suportă până la 8 surse de lumină în modul legacy, însă folosind shader-e personalizate, numărul poate fi extins în funcție de hardware și implementare.
+
+3. Definiți iluminarea de material și specificați unde și când este
+utilizată aceasta.
+
+Răspuns: Iluminarea de material descrie interacțiunea suprafețelor cu lumina prin proprietăți precum ambient, difuz, specular și emisiv. Este utilizată pentru a seta caracteristicile vizuale ale obiectelor înainte de randare.
+
+4. Care este efectul asupra diverselor obiecte la activarea unei surse de
+lumină secundare (per pct. 3), comparativ cu utilizarea unei singure
+surse de lumină?
+
+Răspuns: Adăugarea unei surse secundare îmbunătățește realismul prin combinarea mai multor reflexii și umbre, dar crește complexitatea calculului. Comparativ, o singură sursă produce o iluminare mai simplă și previzibilă.
