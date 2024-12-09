@@ -1,0 +1,16 @@
+﻿Întrebări și răspunsuri:
+
+
+Utilizați pentru texturare imagini cu transparență și fără. Ce observați?
+	Texturile în OpenGL pot fi utilizate atât pentru imagini care au în componență proprietatea de transparență dar și pentru acelea care nu au aceastaproprietate.
+
+Ce formate de imagine pot fi aplicate în procesul de texturare în OpenGL?
+	Formatele de imagini care pot fi aplicate în procesul de texturare în OpenGL sunt: JPG, PNG, BMP, GIF, HDR.
+
+Specificați ce se întâmplă atunci când se modifică culoarea (prin manipularea canalelor RGB) obiectului texturat.
+	Atunci când se modifică culoarea obiectului texturat prin manipularea canalelor RGB, culoarea finală aobiectului se va schimba în funcție de valorile noilor canale RGB.
+	De exemplu, dacă se mărește valoarea canalului R, culoarea obiectului va deveni mai roșie.
+
+Ce deosebiri există între scena ce utilizează obiecte texturate în modul iluminare activat, respectiv dezactivat?
+	În modul iluminare activat, obiectele texturate vor fi ilumimate în funcție de poziția și intensitatea luminii din scenă, iar texturile vor fi vizibile în funcție de modul de texturare ales.
+	În modul iluminare dezactivat, obiectele terxturate vor fi afișate fără a fi afectate de luminadin scenă, iar texturile vor fi vizibile în funcție de modul de texturare ales.
